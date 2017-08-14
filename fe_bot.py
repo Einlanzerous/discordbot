@@ -61,9 +61,9 @@ async def on_message(message):
             fmt = "Sorry, you took too long."
             await client.send_message(message.channel, fmt)
             return
-
-        message = weapon_generate(res)
-        await client.send_message(message.channel, )
+        else:
+            text = weapon_generate.generate()
+            await client.send_message(message.channel, text)
 
 
 @client.command(pass_context=True)

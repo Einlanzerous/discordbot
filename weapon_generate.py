@@ -1,8 +1,8 @@
 from random import randint
 
 
-def generate(res):
-    points = res
+def generate():
+    points = 5
     weapon = ""
     variant = ""
     shells = ""
@@ -105,5 +105,3 @@ def generate(res):
     mods = "no mods"
 
     return "" + size + " " + weapon + "- " + variant + " variant, with " + shells + " shells. Including " + mods + "."
-
-print (generate(4))
